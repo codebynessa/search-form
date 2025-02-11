@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Pesquisa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Formulário de Pesquisa</h1>
+        <p id="description">Por favor, preencha este formulário para nos ajudar a melhorar nossos serviços.</p>
+        
+        <form id="survey-form">
+            <label id="name-label" for="name">Nome:</label>
+            <input type="text" id="name" name="name" placeholder="Digite seu nome" required>
+            
+            <label id="email-label" for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+            
+            <label id="number-label" for="number">Idade:</label>
+            <input type="number" id="number" name="number" min="18" max="99" placeholder="Digite sua idade" required>
+            
+            <label for="dropdown">Qual seu nível de satisfação?</label>
+            <select id="dropdown" name="satisfacao">
+                <option value="" disabled selected>Selecione...</option>
+                <option value="satisfeito">Satisfeito</option>
+                <option value="neutro">Neutro</option>
+                <option value="insatisfeito">Insatisfeito</option>
+            </select>
+            
+            <fieldset>
+                <legend>Você recomendaria nosso serviço?</legend>
+                <label><input type="radio" name="recomendacao" value="sim" required> Sim</label>
+                <label><input type="radio" name="recomendacao" value="nao" required> Não</label>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Quais recursos você utiliza?</legend>
+                <label><input type="checkbox" name="recursos" value="app"> Aplicativo</label>
+                <label><input type="checkbox" name="recursos" value="site"> Site</label>
+                <label><input type="checkbox" name="recursos" value="outros"> Outros</label>
+            </fieldset>
+            
+            <label for="comments">Comentários adicionais:</label>
+            <textarea id="comments" name="comments" placeholder="Digite aqui..."></textarea>
+            
+            <button id="submit" type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
