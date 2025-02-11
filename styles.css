@@ -1,0 +1,83 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    color: #7dc7d6;
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #bbbbbb;
+}
+
+form {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 212, 255, 0.3);
+    width: 90%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #b6bec0;
+}
+
+input, select, textarea {
+    background-color: #2a2a2a;
+    border: 1px solid #21daff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #ff00ff;
+    box-shadow: 0px 0px 8px #ff00ff;
+}
+
+fieldset {
+    border: 1px solid hsl(190, 59%, 76%);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    color: hsl(232, 75%, 83%);
+}
+
+button {
+    margin-top: 15px;
+    background: linear-gradient(45deg, #a2dbe7, #3c559a);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #541d54, #101515);
+    transform: scale(1.05);
+}
